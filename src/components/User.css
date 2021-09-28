@@ -1,0 +1,22 @@
+.user-profile img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.user-profile button {
+  height: 40px;
+  width: 110px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.user-profile {
+  font-size: 0.9rem;
+  background: #28e0d7;
+  box-shadow: 13px 13px 20px #a4a5a7, -13px -13px 20px #d7e9f7;
+}
+h1 {
+  color: #2e8883;
+  font-weight: 900;
+  text-shadow: 6px 6px 9px #2a6e66;
+}

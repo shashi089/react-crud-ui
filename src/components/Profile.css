@@ -1,0 +1,11 @@
+.card {
+  width: 300px;
+  box-shadow: 13px 13px 20px #a4a5a7, -13px -13px 20px #d7e9f7;
+}
+.card-body img {
+  border-radius: 50%;
+}
+.card-body p {
+  margin-left: 40px;
+  font-size: 0.95rem;
+}

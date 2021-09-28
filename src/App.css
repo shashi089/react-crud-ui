@@ -1,0 +1,15 @@
+.nav {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  gap: 1rem;
+  background: linear-gradient(to right, #54bbb6, #0f6863);
+}
+.linkname,
+.nav {
+  color: #fff;
+  text-shadow: 6px 6px 9px #09201f;
+}
+.linkname:hover {
+  text-decoration: none;
+  color: #f70c2c;
+}
