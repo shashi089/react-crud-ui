@@ -49,7 +49,28 @@ function EditUser() {
   }, []);
 
   const handleChange = ({ target: { name, value } }) => {
-    setUser({ [name]: value });
+    switch (name) {
+      case "name": {
+        setUser({ ...user, name: value });
+        break;
+      }
+      case "email": {
+        setUser({ ...user, email: value });
+        break;
+      }
+      case "phone": {
+        setUser({ ...user, phone: value });
+        break;
+      }
+
+      case "company": {
+        setUser({ ...user, company: value });
+        break;
+      }
+
+      default: {
+      }
+    }
   };
 
   // function to submit form

@@ -60,7 +60,46 @@ function EditProfile() {
   }, []);
 
   const handleChange = ({ target: { name, value } }) => {
-    setUser({ [name]: value });
+    switch (name) {
+      case "name": {
+        setUser({ ...user, name: value });
+        break;
+      }
+      case "email": {
+        setUser({ ...user, email: value });
+        break;
+      }
+      case "phone": {
+        setUser({ ...user, phone: value });
+        break;
+      }
+      case "job": {
+        setUser({ ...user, job: value });
+        break;
+      }
+      case "company": {
+        setUser({ ...user, company: value });
+        break;
+      }
+      case "country": {
+        setUser({ ...user, country: value });
+        break;
+      }
+      case "state": {
+        setUser({ ...user, state: value });
+        break;
+      }
+      case "city": {
+        setUser({ ...user, city: value });
+        break;
+      }
+      case "zipcode": {
+        setUser({ ...user, zipcode: value });
+        break;
+      }
+      default: {
+      }
+    }
   };
 
   // function to submit form
