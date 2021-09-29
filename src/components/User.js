@@ -46,7 +46,7 @@ class User extends Component {
               <>
                 {/* User-profile */}
                 <div key={user.id} className="p-3 user-profile m-2 ">
-                  <div className="d-flex flex-wrap mb-2 justify-conent-center align-items-center">
+                  <div className="d-flex flex-wrap mb-2 justify-conent-center align-items-center user-info">
                     {/* User-Image */}
                     <img src={user.avatar} alt="" />
                     <ul className="list-unstyled ml-2 user-info">
@@ -71,7 +71,7 @@ class User extends Component {
                       onClick={() => {
                         if (
                           window.confirm(
-                            "Are you sure you wish to delete this item?"
+                            "Are you sure you wish to delete this User?"
                           )
                         )
                           this.deleteUser(user.id);

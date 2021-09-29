@@ -49,4 +49,8 @@ h1 {
   .user-profile {
     font-size: 0.85rem;
   }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
