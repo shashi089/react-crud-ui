@@ -6,6 +6,11 @@
   border-radius: 50%;
 }
 .card-body p {
-  margin-left: 40px;
-  font-size: 0.95rem;
+  margin-left: 35px;
+  font-size: 0.9rem;
+}
+h2 {
+  color: #2e8883;
+  font-weight: 900;
+  text-shadow: 6px 6px 9px #2a6e66;
 }

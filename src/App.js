@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <div className="nav  d-flex p-3">
-          <h2 className="">CRUD UI</h2>
+          <p className="">CRUD UI</p>
           <div className="ml-auto mr-5">
             <NavLink className="linkname mr-3" to="/">
               Home

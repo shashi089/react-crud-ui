@@ -10,13 +10,43 @@
   font-size: 0.9rem;
   font-weight: 700;
 }
+.main {
+  margin-left: 130px;
+}
 .user-profile {
   font-size: 0.9rem;
-  background: #28e0d7;
+  font-weight: 900;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
   box-shadow: 13px 13px 20px #a4a5a7, -13px -13px 20px #d7e9f7;
+  color: #000000;
 }
 h1 {
   color: #2e8883;
   font-weight: 900;
   text-shadow: 6px 6px 9px #2a6e66;
+}
+@media screen and (max-width: 767px) {
+  .main {
+    margin-left: 5px;
+  }
+  .user-profile img {
+    height: 100px;
+    width: 100px;
+  }
+  .user-profile button {
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  .user-profile {
+    font-size: 0.85rem;
+  }
 }

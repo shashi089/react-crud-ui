@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useHistory, useParams } from "react-router-dom";
 
+import "./Edit.css";
+
 function EditProfile() {
   const param = useParams().id;
   const history = useHistory();
@@ -61,6 +63,7 @@ function EditProfile() {
     setUser({ [name]: value });
   };
 
+  // function to submit form
   const handleSubmit = (event) => {
     event.preventDefault();
     updateProfile();
@@ -71,7 +74,7 @@ function EditProfile() {
       <div className="container mb-5">
         {/* Edit Profile */}
         <h2 className="text-center mt-5">Edit Profile</h2>
-        <form className="d-flex justify-content-center flex-wrap flex-column align-items-center">
+        <form className="user-data d-flex justify-content-center flex-wrap flex-column align-items-center">
           {/* Name */}
           <div className="col-6 p-2">
             <label htmlFor="name">Name :</label>

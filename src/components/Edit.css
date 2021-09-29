@@ -1,0 +1,36 @@
+.user-data input {
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #000000;
+  box-shadow: 7px 7px 10px #a4a5a7, -7px -7px 7px #d7e9f7;
+}
+.user-data label {
+  color: #000000;
+  text-shadow: 3px 3px 7px #051937;
+}
+.user-data button {
+  border-radius: 15px;
+  font-weight: 900;
+  margin: 30px 0;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 7px 7px 10px #2e4e44;
+}
+h2 {
+  color: #2e8883;
+  font-weight: 900;
+  text-shadow: 6px 6px 9px #2a6e66;
+}
+@media screen and (max-width: 767px) {
+  .user-data button {
+    margin: 20px 0;
+    padding: 5px;
+    width: 100px;
+  }
+  .user-data input {
+    font-size: 0.75rem;
+  }
+  .user-data label {
+    font-size: 0.85rem;
+  }
+}

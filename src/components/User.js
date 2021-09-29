@@ -40,32 +40,20 @@ class User extends Component {
     return (
       <>
         <h1 className="m-2 pt-5 text-center">User Details</h1>
-        <div className=" d-flex flex-wrap justify-conent-center ml-5">
+        <div className=" d-flex flex-wrap justify-conent-center main">
           {this.state.users.map((user) => {
             return (
               <>
                 {/* User-profile */}
-                <div key={user.id} className="p-5 user-profile m-2 ">
+                <div key={user.id} className="p-3 user-profile m-2 ">
                   <div className="d-flex flex-wrap mb-2 justify-conent-center align-items-center">
                     {/* User-Image */}
                     <img src={user.avatar} alt="" />
                     <ul className="list-unstyled ml-2 user-info">
-                      <li>
-                        <b>Name : </b>
-                        {user.name}
-                      </li>
-                      <li>
-                        <b>Email : </b>
-                        {user.email}
-                      </li>
-                      <li>
-                        <b>Phone : </b>
-                        {user.phone}
-                      </li>
-                      <li>
-                        <b>Company : </b>
-                        {user.company}
-                      </li>
+                      <li>Name :{user.name}</li>
+                      <li>Email :{user.email}</li>
+                      <li>Phone :{user.phone}</li>
+                      <li>Company :{user.company}</li>
                     </ul>
                   </div>
                   <div>

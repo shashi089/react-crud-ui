@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
+import "./Edit.css";
+
 function EditUser() {
   const param = useParams().id;
   const history = useHistory();
@@ -50,6 +52,7 @@ function EditUser() {
     setUser({ [name]: value });
   };
 
+  // function to submit form
   const handleSubmit = (event) => {
     event.preventDefault();
     postUser();
@@ -60,7 +63,7 @@ function EditUser() {
       <div className="container">
         {/* Edit-User-details */}
         <h2 className="text-center mt-5">Edit User</h2>
-        <form className="d-flex justify-content-center flex-wrap flex-column align-items-center">
+        <form className="user-data d-flex justify-content-center flex-wrap flex-column align-items-center">
           {/* Name */}
           <div className="col-6 p-2">
             <label htmlFor="name">Name :</label>

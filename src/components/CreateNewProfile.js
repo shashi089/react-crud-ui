@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 
+import "./Edit.css";
+
 function CreateNewProfile() {
   const history = useHistory();
   const [user, setUser] = useState({
@@ -83,6 +85,7 @@ function CreateNewProfile() {
     }
   };
 
+  // function to submit form
   const handleSubmit = async (event) => {
     event.preventDefault();
     createProfile();
@@ -92,7 +95,7 @@ function CreateNewProfile() {
       <div className="container mb-5">
         {/* Create Profile */}
         <h2 className="text-center mt-5">Create User-Profile</h2>
-        <form className="d-flex justify-content-center flex-wrap flex-column align-items-center">
+        <form className="user-data d-flex justify-content-center flex-wrap flex-column align-items-center">
           {/* Name */}
           <div className="col-6 p-2">
             <label htmlFor="name">Name :</label>
